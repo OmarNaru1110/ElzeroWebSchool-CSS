@@ -1,0 +1,13 @@
+div {
+    width: 600px;
+    height: 60px;
+    margin: 20px auto;
+    padding-top: 20px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  div:empty {
+    background-color: red;
+  }

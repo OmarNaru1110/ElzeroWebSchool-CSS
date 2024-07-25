@@ -1,0 +1,30 @@
+table{
+    font-family: Arial;
+    border-spacing: 2px;
+    width: 700px;
+    margin:0 auto;
+}
+td{
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+}
+thead th{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 10px;
+}
+.view{
+    background-color: rgb(87, 171, 255);
+    color: white;
+    padding: 2px 7px;
+}
+.delete{
+    background-color: rgb(255, 45, 73);
+    color: white;
+    padding: 2px 7px;
+}
+.table-title{
+    font-weight: 700;
+    padding: 10px;
+}

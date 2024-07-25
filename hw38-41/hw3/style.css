@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+.grand-parent {
+    /* background-color: black; */
+    width: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+.parent1, .parent2 {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: #eee;
+}
+.parent2{
+    margin-left: 46px;
+}
+.parent1::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(85, 162, 255);
+    width: 3px;
+    height: 100%;
+    left: 275px;
+    top: 0px;
+}
+.parent1::before {
+    position: absolute;
+    content: "or";
+    background-color: rgb(85, 162, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 115px;
+    left: 267px;
+    color:white;
+    z-index: 10;
+    text-align: center;
+}
+.child-basic, .child-pro{
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background-color: rgb(225, 225, 225);
+    position: relative;
+}
+.child-basic::before, .child-pro::before {
+    position: absolute;
+    font-family:sans-serif;
+    font-size: 40px;
+}
+.child-basic::before{
+    content: "Free";
+    text-align: center;
+    top: 35%;
+    left: 23%;
+}
+.child-pro::before {
+    content: "30$";
+    top: 35%;
+    left: 30%;
+}
+.child-basic::after, .child-pro::after {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(85, 162, 255);
+    top: -30px;
+    left: -24px;
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    font-family:sans-serif;
+}
+.child-basic::after{
+    content: "Basic";
+}
+.child-pro::after{
+    content: "Pro";
+}

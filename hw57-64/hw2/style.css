@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+.layout {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: repeat(8,200px);
+    grid-template-areas: 
+    "head head head head head head head head"
+    "sec sec sec sec sec sec aside aside"
+    "foot foot foot foot foot foot foot foot"
+    ;
+    height: 100vh;
+}
+header {
+    background-color: rgb(0, 157, 255);
+    grid-area: head;
+}
+header::after {
+    content: "header";
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+section {
+    background-color: rgb(255, 85, 0);
+    grid-area: sec;
+}
+section::after {
+    content: "section";
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+aside {
+    background-color: rgb(96, 100, 155);
+    grid-area: aside;
+}
+aside::after {
+    content: "nav";
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+footer {
+    background-color: rgb(47, 132, 67);
+    grid-area: foot;
+}
+footer::after {
+    content: "nav";
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}

@@ -1,0 +1,25 @@
+div {
+    background-color: #eee;
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px;
+    font-size: 20px;
+    caret-color: red;
+    position: relative;
+}
+.two, .three {
+    color: rgba(0, 0, 0, 0.441);
+}
+div::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    background-color: #ff6200;
+    background-image: 
+        linear-gradient(to right,
+            #ff6200 50%,
+            #00a35f 50%);
+    top: 91%;
+    left: 0px;
+}

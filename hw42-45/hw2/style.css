@@ -1,0 +1,13 @@
+div {
+    background-color: #eee !important;
+    color:black !important;
+    text-align: center;
+    border-color: transparent !important;
+    font-size: 0px !important;
+    position: relative;
+}
+div::after {
+    content: "Elzero";
+    font-size: 20px !important;
+    text-align: center;
+}

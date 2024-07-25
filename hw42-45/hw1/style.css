@@ -1,0 +1,22 @@
+.parent {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    padding: 50px;
+    text-align: center;
+    margin: 50px auto;
+    transition-duration: .5s;
+}
+.child {
+    background-color: rgb(191, 191, 191);
+    padding: 10px 0px;
+    transition-property: margin-top;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.parent:hover {
+    margin-top: 0px;
+}
+.parent:hover .child {
+    margin-top: 20px;
+}

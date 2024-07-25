@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+.parent {
+    width: 400px;
+    background-color: #eee;
+    display: flex;
+    padding: 20px;
+}
+
+.child {
+    background-color: red;
+    width: 24%;
+    color: white;
+    text-align: center;
+}

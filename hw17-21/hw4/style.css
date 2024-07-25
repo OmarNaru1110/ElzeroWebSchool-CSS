@@ -1,0 +1,10 @@
+a {
+    background-color: rgba(0, 142, 5, 0.855);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: white;
+    border-bottom: 5px solid darkgreen;
+    display: block; /* Make the <a> element a block element */
+    width: fit-content; /* Ensure the width fits the content */
+    margin:0px auto;
+}

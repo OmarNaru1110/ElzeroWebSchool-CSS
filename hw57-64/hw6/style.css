@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.layout {
+    background-color: #ddd;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 15px 10px;
+}
+.title2, .name{
+    font-weight: 700;
+    font-size: 24px;
+}
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(177, 177, 177);
+    line-height: 2;
+}
+.description{
+    font-size: 20px;
+}
+.black .title2, .black .name, .black .description{
+    color: white;
+}
+
+.white {
+    background-color: white;
+}
+.black {
+    background-color: black;
+}
+.layout div {
+    padding: 20px;
+    box-shadow: 0px 5px 0px orange;
+    border-radius: 5px;
+}
+.one {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.two{
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.three {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.four {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.five {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.six {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+
+.seven {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.eight {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.nine {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.ten {
+    grid-column-start: 7;
+    grid-column-end: 9;
+}

@@ -1,0 +1,48 @@
+body{
+    background-color: #333;
+}
+div {
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+    border-radius: 50%;
+    border: rgb(255, 72, 72) 5px solid;
+    border-right: transparent 5px solid;
+    position: relative;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: rgb(72, 124, 255) solid 5px;
+    border-bottom: transparent 5px solid;
+    transform: translate(-5px,-5px) scale(1.3,1.3);
+}
+div::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: rgb(215, 107, 254) solid 5px;
+    border-top: transparent 5px solid;
+    transform: translate(-5px,-5px) scale(1.7,1.7);
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div:hover{
+    animation-play-state: paused;
+}

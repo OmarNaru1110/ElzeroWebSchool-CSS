@@ -1,0 +1,9 @@
+div {
+    background-color: red;
+    margin: 10px;
+    max-width: 400px;
+    max-height: 50px;
+}
+.last {
+    overflow-y: hidden;
+}

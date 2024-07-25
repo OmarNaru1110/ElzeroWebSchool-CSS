@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin: 50px auto;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 700; 
+    position: relative;
+}
+div::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    border-right: red 10px solid; 
+    border-top: red 10px solid; 
+    border-bottom: red 10px solid; 
+    border-left: transparent 10px solid;
+    transform: scale(1.1);
+}
+div::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    border-right: transparent 10px solid; 
+    border-top: #0066ff 10px solid; 
+    border-bottom: #0066ff 10px solid; 
+    border-left: #0066ff 10px solid;
+    transform: scale(1.2);
+}
+div::after, div::before {
+    transition-duration: .5s;
+}
+div:hover::after {
+    transform: 
+        rotate(180deg)
+        scale(1.1);
+}
+div:hover::before {
+    transform: 
+        rotate(-180deg)
+        scale(1.2);
+}

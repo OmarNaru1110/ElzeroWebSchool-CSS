@@ -1,0 +1,4 @@
+div {
+    color: black;
+    text-shadow: .5px .5px 0 red, .9px .9px 0 blue, 1.3px 1.3px 0 purple;
+}

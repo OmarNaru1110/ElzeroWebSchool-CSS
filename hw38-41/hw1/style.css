@@ -1,0 +1,33 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: inline-block;
+    border: black solid 2px;
+    border-radius: 50%;
+    margin:10px 20px;
+    box-shadow: 10px 5px 0px rgb(88, 155, 255),
+                -10px -5px 0px rgb(255, 65, 65);
+    counter-increment: cnt;
+    position: relative;
+}
+
+div::before{
+    content: "Element";
+    position: relative;
+    top: 39px;
+    left: 25px;
+}
+
+div::after{
+    content: counter(cnt);
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: -10px;
+}

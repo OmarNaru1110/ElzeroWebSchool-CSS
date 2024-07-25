@@ -1,0 +1,38 @@
+div{
+    width: 400px;
+    margin:30px auto;
+    padding:15px;
+    background-color: #eee;
+    text-align: center;
+    border-top: red solid 2px;
+    border-bottom: red solid 2px;
+    border-right: blue solid 2px;
+    border-left: blue solid 2px;
+}
+.top-left, .top-right, .bottom-left, .bottom-right{
+    color:white;
+    background-color: blue;
+    padding:2px 6px;
+    position:absolute;
+}
+.top-left{
+    top:20px;
+    left:155px;
+    border-right: red solid 2px;
+}
+.bottom-left{
+    top:125px;
+    left:155px;
+    border-right: red solid 2px;
+}
+.top-right{
+    top:20px;
+    left:585px;
+    border-left: red solid 2px;
+
+}
+.bottom-right{
+    top:125px;
+    left:585px;
+    border-left: red solid 2px;
+}

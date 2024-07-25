@@ -1,0 +1,17 @@
+/* do css for all elements that have class= "title" */
+.title {
+
+}
+
+/* do css for all elements that have id="nav" */
+#nav {
+
+}
+
+/* do css for all divs */
+div {
+}
+
+/* do css for all h2s */
+h2 {
+}

@@ -1,0 +1,20 @@
+div {
+    width: 400px;
+    padding: 10px;
+}
+
+.element-1 {
+    border-left-color: red;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border-left-color: lightgreen;
+    border-left-width: 5px;
+    border-left-style: solid;
+}

@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #eee;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    margin: 30px auto;
+}
+div p:first-child{
+    color: #8c8c8c;
+    font-size: 14px;
+}
+div p:last-child{
+    font-weight: 700;
+    line-height: 0px;
+    font-size: 18px;
+}
+.container div{
+    margin-bottom: 40px;
+    position: relative;
+}
+.container div::before {
+    content: "";
+    position: absolute;
+    top: 155%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.container .money::after, .container .project::after, .container .team::after {
+    content: "";
+    position: absolute;
+    top: 155%;
+    left: 0;
+    height: 5px;
+    border-radius: 10px;
+}
+.container .money::after{
+    background-color: #008cff;
+    width: 80%;
+}
+.container .project::after{
+    background-color: orange;
+    width: 55%;
+}
+.container .team::after{
+    background-color: #00c800;
+    width: 75%;
+}
+.money p:last-child::after{
+    content: "80%";
+    width: 20px;
+    font-size: 10px;
+    color: white;
+    background-color: #008cff;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-weight: 100;
+    position: absolute;
+    left: 77%;
+    top: 70%;
+}
+.money p:last-child::before{
+    content: "";
+    position: absolute;
+    left: 77.8%;
+    top: 102%;
+    border: 10px #008cff solid;
+    border-bottom: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-left: 10px transparent solid;
+}
+.project p:last-child::after{
+    content: "55%";
+    width: 20px;
+    font-size: 10px;
+    color: white;
+    background-color: orange;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-weight: 100;
+    position: absolute;
+    left: 52%;
+    top: 70%;
+}
+.project p:last-child::before{
+    content: "";
+    position: absolute;
+    left: 52.8%;
+    top: 102%;
+    border: 10px orange solid;
+    border-bottom: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-left: 10px transparent solid;
+}
+.team p:last-child::after{
+    content: "75%";
+    width: 20px;
+    font-size: 10px;
+    color: white;
+    background-color: #00c800;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-weight: 100;
+    position: absolute;
+    left: 72%;
+    top: 70%;
+}
+.team p:last-child::before{
+    content: "";
+    position: absolute;
+    left: 72.8%;
+    top: 102%;
+    border: 10px #00c800 solid;
+    border-bottom: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-left: 10px transparent solid;
+}
